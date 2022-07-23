@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * *_strcat - function commute srtings
@@ -19,6 +19,7 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
+
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
@@ -29,3 +30,4 @@ char *_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+

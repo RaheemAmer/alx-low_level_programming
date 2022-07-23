@@ -1,17 +1,20 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _memcpy - copies memory area,
- * @dest: destination memory area.
- * @src: source memory area.
- * @n: bytes filled.
- * Return: the pointer to dest.
+ * _memcpy - irontnoux2
+ * @dest: pointer to char params
+ * @src: pointer to char params
+ * @n: size
+ * Return: *dest
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-		*(dest + i) =  *(src + i);
-
+	{
+		dest[i] = src[i];
+	}
 	return (dest);
 }
