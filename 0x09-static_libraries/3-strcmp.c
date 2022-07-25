@@ -1,23 +1,23 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _strcmp - compare
- * @s1 : pointerto char params
- * @s2 : pointer to char params
- * Return: *dest
+ * _strcmp - compares two strings
+ * @s1: first string.
+ * @s2: second string.
+ * Return: 0 if s1 and s2 are equals,
+ * another number if not.
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i;
-	int R;
+	int i = 0, op = 0;
 
-	i = 0;
-
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
+	while (op == 0)
 	{
+		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		op = *(s1 + i) - *(s2 + i);
 		i++;
 	}
-	R = s1[i] - s2[i];
-	return (R);
+
+	return (op);
 }

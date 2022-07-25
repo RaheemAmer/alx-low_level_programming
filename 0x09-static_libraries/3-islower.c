@@ -1,18 +1,14 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _islower - check the code for Holberton School students.
+ * _islower - prints 1 or 0 depending on input
+ * @c: first parameter
  *
- * @c:  is a parameter
- *
- * Return: Always 0.
+ * Description: prints all lowercase letters
+ * Return: Always(0).
  */
 
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return (1);
-	}
-	return (0);
+	return (c >= 'a' && c <= 'z');
 }
